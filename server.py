@@ -104,7 +104,7 @@ def get_last_message():
         
     print("Response:", last_element.inner_text())
     return last_element.inner_text()
-
+    
 @APP.route("/chat", methods=["GET"])
 def chat():
     if "llama2.ai" not in PAGE.url:
