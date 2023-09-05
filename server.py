@@ -63,7 +63,7 @@ def is_not_started() -> bool:
             return False
         
     #It could be the case that the AI started so fast our code didn't catch it, 
-    #so we'll actually check if it is loading response just in case
+    #so we will actually check if it is loading response just in case
     if is_loading_response():
         return False
 
